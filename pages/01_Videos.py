@@ -40,7 +40,7 @@ def useCourse(dfSearchAll):
     gridoptions = gd.build()
     grid_table = AgGrid(dfSearchAll, gridOptions=gridoptions, update_mode = GridUpdateMode.SELECTION_CHANGED, theme='material')
     sel_row = grid_table['selected_rows']
-    st.write['selected_rows']
+    st.write('selected_rows')
     
     if len(sel_row) > 0:    
         
