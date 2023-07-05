@@ -65,11 +65,11 @@ def useCourse(dfSearchAll):
                 else:
                     vorlesung=''
                 if sel_row['Übungen ipynb'] != 'none':
-                    uebungen = "[Übungen](https://jupyter_nb/" + sel_row['Übungen ipynb'] + ")"
+                    uebungen = "[Übungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Übungen ipynb'] + ")"
                 else:
                     uebungen=''
                 if sel_row['Lösungen ipynb'] != 'none':
-                    loesungen = "[Lösungen](https://raw.githubusercontent.com/Hezel2000/Data_Science/main/jupyter_nb/" + sel_row['Lösungen ipynb'] + ")"
+                    loesungen = "[Lösungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Lösungen ipynb'] + ")"
                 else:
                     loesungen=''
                 if vorlesung=='' and uebungen=='' and loesungen=='':
