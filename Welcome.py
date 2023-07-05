@@ -32,12 +32,11 @@ def useCourse(dfSearchAll):
         with col2:
             dfSearchAll_tmp = dfSearchAll[dfSearchAll['Kapitel'] == chapter_sel]
             topic_sel = st.selectbox('Select Unit', dfSearchAll_tmp['Titel'].tolist())
-            st.write(topic_sel)
             sel_row = dfSearchAll.loc[dfSearchAll[dfSearchAll['Titel'] == topic_sel].index[0]+1]
 
     with tab2:
-        topic_sel = st.selectbox('Select a Topic', dfSearchAll['Titel'].tolist())
-        sel_row_b = dfSearchAll.loc[dfSearchAll[dfSearchAll['Titel'] == topic_sel].index[0]+1]
+        topic_sel_b = st.selectbox('Select a Topic', dfSearchAll['Titel'].tolist())
+        sel_row_b = dfSearchAll.loc[dfSearchAll[dfSearchAll['Titel'] == topic_sel_b].index[0]+1]
 
 
     # dfSearchAll = dfSearchAll
@@ -51,7 +50,7 @@ def useCourse(dfSearchAll):
     # st.write(sel_row)
     # st.write(sel_row[0]['Youtube'])
 
-
+    
     if len(sel_row) > 0:    
         
         col1, col2 = st.columns([3, 1])
@@ -76,6 +75,11 @@ def useCourse(dfSearchAll):
                     st.write('keine vorhanden')
                 else:
                     st.write(vorlesung,uebungen,loesungen)
+                st.download_button(
+                    label="Lösung",
+                    data='jupyter_nb/'+sel_row['Lösungen ipynb'],
+                    file_name='Lösung '+topic_sel+'.ipynb'
+                )
             with st.expander('Schlagworte', expanded=True):
                 if sel_row['Schlagworte'] != 'none':
                     st.write(sel_row['Schlagworte'])
