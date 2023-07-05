@@ -27,7 +27,7 @@ st.subheader('Wähle Deine Lerneinheit')
 
 @st.cache_data
 def importCourseDatasheet():
-    dfSearchAll= pd.read_csv('course_material_data_science.csv')
+    dfSearchAll= pd.read_csv('course_material_data_science_short_course.csv')
     return dfSearchAll
 
 
