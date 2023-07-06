@@ -83,7 +83,7 @@ def useCourse_english(dfSearchAll):
                 else:
                     loesungen=''
                 if vorlesung=='' and uebungen=='' and loesungen=='':
-                    st.write('keine vorhanden')
+                    st.write('none available')
                 else:
                     st.write(vorlesung,uebungen,loesungen)
               
