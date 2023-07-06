@@ -29,16 +29,16 @@ def useCourse(dfSearchAll):
         with col2:
             st.write('Laufzeit: ' + sel_row['Laufzeit'])
             with st.expander('Jupyter Notebooks', expanded=True):
-                if sel_row['Vorlesung ipynb'] != 'none':
-                    vorlesung = "[Vorlesung](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Vorlesung ipynb'] + ")"
+                if sel_row['Lecture ipynb'] != 'none':
+                    vorlesung = "[Vorlesung](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Lecture ipynb'] + ")"
                 else:
                     vorlesung=''
-                if sel_row['Übungen ipynb'] != 'none':
-                    uebungen = "[Übungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Übungen ipynb'] + ")"
+                if sel_row['Exercise ipynb'] != 'none':
+                    uebungen = "[Übungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Exercise ipynb'] + ")"
                 else:
                     uebungen=''
-                if sel_row['Lösungen ipynb'] != 'none':
-                    loesungen = "[Lösungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Lösungen ipynb'] + ")"
+                if sel_row['Solution ipynb'] != 'none':
+                    loesungen = "[Lösungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Solution ipynb'] + ")"
                 else:
                     loesungen=''
                 if vorlesung=='' and uebungen=='' and loesungen=='':
