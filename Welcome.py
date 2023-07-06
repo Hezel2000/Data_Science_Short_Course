@@ -66,20 +66,20 @@ def useCourse_english(dfSearchAll):
     if len(sel_row) > 0:
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.video(sel_row['Youtube'])
+            st.video(sel_row['Youtube_eng'])
         with col2:
-            st.write('Duration: ' + sel_row['Laufzeit'])
+            st.write('Duration: ' + sel_row['Duration'])
             with st.expander('Jupyter Notebooks', expanded=True):
-                if sel_row['Vorlesung ipynb'] != 'none':
-                    vorlesung = "[Vorlesung](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Vorlesung ipynb'] + ")"
+                if sel_row['Lecture ipynb'] != 'none':
+                    vorlesung = "[Lecture](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Lecture ipynb'] + ")"
                 else:
                     vorlesung=''
-                if sel_row['Übungen ipynb'] != 'none':
-                    uebungen = "[Übungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Übungen ipynb'] + ")"
+                if sel_row['Exercise ipynb'] != 'none':
+                    uebungen = "[Exercise](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Exercise ipynb'] + ")"
                 else:
                     uebungen=''
-                if sel_row['Lösungen ipynb'] != 'none':
-                    loesungen = "[Lösungen](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Lösungen ipynb'] + ")"
+                if sel_row['Solution ipynb'] != 'none':
+                    loesungen = "[Solution](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/jupyter_nb/" + sel_row['Solution ipynb'] + ")"
                 else:
                     loesungen=''
                 if vorlesung=='' and uebungen=='' and loesungen=='':
@@ -88,12 +88,12 @@ def useCourse_english(dfSearchAll):
                     st.write(vorlesung,uebungen,loesungen)
               
             with st.expander('key words', expanded=True):
-                if sel_row['Schlagworte'] != 'none':
-                    st.write(sel_row['Schlagworte'])
+                if sel_row['key words'] != 'none':
+                    st.write(sel_row['key words'])
                 else:
                     st.write('none')
 
-        st.write(sel_row['Beschreibung'])
+        st.write(sel_row['Description'])
         
 
 dfSearchAll = importCourseDatasheet()
