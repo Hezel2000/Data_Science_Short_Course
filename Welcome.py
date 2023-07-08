@@ -4,7 +4,6 @@ import pandas as pd
 st.subheader('Data Science Short Course 2023 – Online Part')
 
 # sel_language = st.radio('',('english', 'german'), horizontal=True)
-
 # st.divider()
 
 @st.cache_data
@@ -100,13 +99,10 @@ dfSearchAll = importCourseDatasheet()
 
 tab1, tab2 = st.tabs(['english', 'german'])
 with tab1:
-# if sel_language == 'german':
-    useCourse(dfSearchAll)
-with tab2:
-# else:
     useCourse_english(dfSearchAll)
+with tab2:
+    useCourse(dfSearchAll)
 
-st.divider()
 
 st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
 
