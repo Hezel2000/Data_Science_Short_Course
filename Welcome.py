@@ -88,8 +88,8 @@ def useCourse_english(dfSearchAll):
                     st.write(vorlesung,uebungen,loesungen)
               
             with st.expander('key words', expanded=True):
-                if sel_row['key words'] != 'none':
-                    st.write(sel_row['key words'])
+                if sel_row['Schlagworte'] != 'none':
+                    st.write(sel_row['Schlagworte'])
                 else:
                     st.write('none')
 
