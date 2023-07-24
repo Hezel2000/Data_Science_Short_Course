@@ -97,12 +97,23 @@ def useCourse_english(dfSearchAll):
 
 dfSearchAll = importCourseDatasheet()
 
-tab1, tab2 = st.tabs(['english', 'german'])
+tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
 with tab1:
     useCourse_english(dfSearchAll)
 with tab2:
     useCourse(dfSearchAll)
+with tab3:
+    st.subheader('online part 1')
+    "[Atomic Masses.xlsx](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Atomic_Masses.xlsx)"
+    
+    st.download_button(
+    label="Exercise 1",
+    data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Data-Science-1-exercise.pdf',
+    file_name='Data-Science-1-exercise.pdf',
+    # mime='text/csv',
+    )
 
+    st.divider()
 
 st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
 
