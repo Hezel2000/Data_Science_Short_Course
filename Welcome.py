@@ -108,7 +108,7 @@ with tab3:
     
     st.download_button(
     label="Exercises & Data",
-    data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Data-Science-1-exercise.pdf',
+    data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Archive.zip',
     file_name='Data-Science-1-exercise.pdf',
     mime='application/zip'
     )
