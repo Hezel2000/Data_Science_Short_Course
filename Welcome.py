@@ -107,7 +107,7 @@ with tab3:
     "[Atomic Masses.xlsx](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Atomic_Masses.xlsx)"
     
     st.download_button(
-    label="Exercise 1",
+    label="Exercises & Data",
     data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Data-Science-1-exercise.pdf',
     file_name='Data-Science-1-exercise.pdf',
     mime='application/zip'
