@@ -110,7 +110,7 @@ with tab3:
     label="Exercise 1",
     data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Data-Science-1-exercise.pdf',
     file_name='Data-Science-1-exercise.pdf',
-    # mime='text/csv',
+    mime='application/zip'
     )
 
     st.divider()
