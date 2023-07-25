@@ -97,25 +97,31 @@ def useCourse_english(dfSearchAll):
 
 dfSearchAll = importCourseDatasheet()
 
-tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
+tab1, tab2 = st.tabs(['english', 'german'])
 with tab1:
     useCourse_english(dfSearchAll)
 with tab2:
     useCourse(dfSearchAll)
-with tab3:
-    st.subheader('online part 1')
-    "[Atomic Masses.xlsx](https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Atomic_Masses.xlsx)"
-    
-    st.download_button(
-    label="Exercises & Data",
-    data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Archive.zip',
-    file_name='Exercises & Data.zip',
-    mime='application/zip'
-    )
 
-    st.divider()
 
 st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
+
+# tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
+# with tab1:
+#     useCourse_english(dfSearchAll)
+# with tab2:
+#     useCourse(dfSearchAll)
+# with tab3:
+#     st.download_button(
+#     label="Exercises & Data",
+#     data='https://raw.githubusercontent.com/Hezel2000/Data_Science_Short_Course/main/data/Archive.zip',
+#     file_name='Exercises & Data.zip',
+#     mime='application/zip'
+#     )
+
+#     st.divider()
+
+# st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
 
 #---------------------------------#
 #------ Main Page Sidebar --------#
