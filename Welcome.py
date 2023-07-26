@@ -107,7 +107,7 @@ with tab3:
     st.write('You can download the online course material as a zip archive here:')
     with open("Exercises & Data.zip", "rb") as files:
         btn = st.download_button(
-            label="Download ZIP",
+            label="Download online material",
             data=files,
             file_name="Data Science online course material.zip",
             mime="application/zip"
