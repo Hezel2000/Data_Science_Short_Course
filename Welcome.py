@@ -113,6 +113,7 @@ with tab2:
     useCourse(dfSearchAll)
 with tab3:
     st.write('You can download the online course material as a zip archive here:')
+    st.write('Last updated: 26.07.2023')
     with open("Exercises & Data.zip", "rb") as files:
         btn = st.download_button(
             label="Download ZIP",
