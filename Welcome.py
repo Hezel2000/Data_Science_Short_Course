@@ -117,7 +117,7 @@ with tab3:
         btn = st.download_button(
             label="Download ZIP",
             data=files,
-            file_name="Exercises & data.zip",
+            file_name="Data Science online course material.zip",
             mime="application/zip"
         )
 
