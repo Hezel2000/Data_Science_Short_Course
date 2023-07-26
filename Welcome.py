@@ -112,7 +112,7 @@ with tab3:
             file_name="Data Science online course material.zip",
             mime="application/zip"
         )
-    st.markdown(':lightgray[Last updated: 26.07.2023]')
+    st.markdown(':yellow[Last updated: 26.07.2023]')
 
     st.divider()
 
