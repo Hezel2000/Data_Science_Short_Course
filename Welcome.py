@@ -97,33 +97,33 @@ def useCourse_english(dfSearchAll):
 
 dfSearchAll = importCourseDatasheet()
 
-tab1, tab2 = st.tabs(['english', 'german'])
-with tab1:
-    useCourse_english(dfSearchAll)
-with tab2:
-    useCourse(dfSearchAll)
-
-st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
-
-
-# tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
+# tab1, tab2 = st.tabs(['english', 'german'])
 # with tab1:
 #     useCourse_english(dfSearchAll)
 # with tab2:
 #     useCourse(dfSearchAll)
-# with tab3:
-#     st.write('You can download all files as a zip archive here:')
-#     with open("data/exercises-and-data.zip", "rb") as files:
-#         btn = st.download_button(
-#             label="Download ZIP",
-#             data=files,
-#             file_name="Exercises & data.zip",
-#             mime="application/zip"
-#         )
-
-#     st.divider()
 
 # st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
+
+
+tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
+with tab1:
+    useCourse_english(dfSearchAll)
+with tab2:
+    useCourse(dfSearchAll)
+with tab3:
+    st.write('You can download all files as a zip archive here:')
+    with open("Exercises & Data.zip", "rb") as files:
+        btn = st.download_button(
+            label="Download ZIP",
+            data=files,
+            file_name="Exercises & data.zip",
+            mime="application/zip"
+        )
+
+    st.divider()
+
+st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
 
 #---------------------------------#
 #------ Main Page Sidebar --------#
