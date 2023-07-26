@@ -97,14 +97,6 @@ def useCourse_english(dfSearchAll):
 
 dfSearchAll = importCourseDatasheet()
 
-# tab1, tab2 = st.tabs(['english', 'german'])
-# with tab1:
-#     useCourse_english(dfSearchAll)
-# with tab2:
-#     useCourse(dfSearchAll)
-
-# st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
-
 
 tab1, tab2, tab3 = st.tabs(['english', 'german', 'downloads'])
 with tab1:
@@ -120,7 +112,7 @@ with tab3:
             file_name="Data Science online course material.zip",
             mime="application/zip"
         )
-    st.markdown(:grey['Last updated: 26.07.2023'])
+    st.markdown(':grey[Last updated: 26.07.2023]')
 
     st.divider()
 
