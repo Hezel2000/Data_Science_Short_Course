@@ -3,10 +3,8 @@ import pandas as pd
 
 st.subheader('Data Science Short Course 2023 – Online Part')
 
-# sel_language = st.radio('',('english', 'german'), horizontal=True)
-# st.divider()
 
-@st.cache_data
+#@st.cache_data
 def importCourseDatasheet():
     dfSearchAll= pd.read_csv('course_material_data_science_short_course.csv')
     return dfSearchAll
