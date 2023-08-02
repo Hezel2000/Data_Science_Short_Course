@@ -110,7 +110,7 @@ with tab3:
             file_name="Data Science online course material.zip",
             mime="application/zip"
         )
-    st.markdown(":lightgray[Last updated: 02.08.2023, 08.00 o'clock]")
+    st.markdown(":lightgray[Last updated: 02.08.2023, 8.00 o'clock]")
 
     st.divider()
 
