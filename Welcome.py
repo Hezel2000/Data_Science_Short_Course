@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.subheader('Data Science Short Course 2023 – Online Part')
+st.subheader('Data Science Short Course 2024 – Online Part')
 
 
 #@st.cache_data
