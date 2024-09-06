@@ -96,7 +96,7 @@ def useCourse_english(dfSearchAll):
 dfSearchAll = importCourseDatasheet()
 
 
-tab1, tab2, tab3 = st.tabs(['english', 'german'])
+tab1, tab2 = st.tabs(['english', 'german'])
 with tab1:
     useCourse_english(dfSearchAll)
 with tab2:
