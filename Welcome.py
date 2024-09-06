@@ -9,7 +9,6 @@ def importCourseDatasheet():
     dfSearchAll= pd.read_csv('course_material_data_science_short_course.csv')
     return dfSearchAll
 
-
 def useCourse(dfSearchAll):
     col1, col2 = st.columns((20,80))
     with col1:
@@ -114,7 +113,8 @@ with tab2:
 
 #     st.divider()
 
-st.write('Open [Course Webpage](https://hezel2000.quarto.pub/data-science-2023)')
+st.write('Open [Course Webpage](https://hezel2000.quarto.pub/dmg-data-science-short-course/)')
+st.write("The downloads of the Jupyter Notebooks in the box needs to be done with a right click and then 'downlad as'")
 
 #---------------------------------#
 #------ Main Page Sidebar --------#
